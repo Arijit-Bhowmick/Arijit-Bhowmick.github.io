@@ -1,2 +1,2 @@
-RedirectPermanent / https://sys41x4.github.io
-RedirectPermanent /* https://sys41x4.github.io
+redirect 301 / https://sys41x4.github.io
+redirect 301 /* https://sys41x4.github.io
