@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Arijit Bhowmick</title>
+        <meta name="description" content="Security Researcher from India">
+        <link rel="canonical" href="index.html">
+        <meta property="og:locale" content="en_IN">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Arijit Bhowmick">
+        <meta property="og:title" content="Arijit Bhowmick">
+        <meta property="og:description" content="Security Researcher from India">
+        <meta property="og:url" content="index.html">
+        <meta property="og:image" content="/static/share-image.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="google" content="nositelinkssearchbox">
+        <meta name="google" content="notranslate">
+        
+        <!-- Font Awesome css -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+        
+        <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/font-awesome.min.css'> -->
+
+        <link rel="stylesheet" href="/static/css/style8d95.css?v=2023091701">
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+        <!-- <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script> -->
+        <script src="/static/js/donate.js"></script>
+
+        <!-- Favicon -->
+        <link rel="icon" href="/static/img/favicon/favicon.ico">
+        <link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/static/img/favicon/favicon-16x16.png">
+        <link rel="apple-touch-icon" href="/static/img/favicon/favicon.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/static/img/favicon/apple-touch-icon.png">
+        
+
+
+<link rel="manifest" href="/site.webmanifest">
+        
+        
+        
+    </head>
+
+
+    <body>
+        <div id="EnterView">
+            <div class="_t1">
+                Arijit Bhowmick
+            </div>
+            <div class="_t2">
+                Portfolio
+            </div>
+        </div>
+        <div id="Page">
+            <div id="Background">
+                <canvas></canvas>
+            </div>
+            <div class="mask" id="Mask">
+                <div class="mask_top"></div>
+                <div class="mask_bottom"></div>
+            </div>
+            <div class="frame" id="Frame">
+                <div class="frame_line frame_line-left"></div>
+                <div class="frame_line frame_line-right"></div>
+                <div class="frame_line frame_line-top"></div>
+                <div class="frame_line frame_line-bottom"></div>
+            </div>
+            
+            
+    <div class="theme" id="Theme" x-data>
+    <div class="theme_colors" @click="$store.app.toggleTheme()">
+    <div class="theme_btn" :class="{ 'is-selected': $store.app.theme === 'light' }">
+        <div class="_box"></div>
+        <div class="_text">Light</div>
+    </div>
+    <div class="theme_btn" :class="{ 'is-selected': $store.app.theme === 'dark' }">
+        <div class="_box"></div>
+        <div class="_text">Dark</div>
+    </div>
+    </div>
+    <div class="theme_btn" :class="{ 'is-selected': $store.app.fontStyle === 'mono' }" @click="$store.app.toggleFontStyle()">
+    <div class="_box"></div>
+    <div class="_text">Monospaced</div>
+    </div>
+</div>
+
+
+            
+    <!-- Include header content from header.html -->
+    <header class="siteHeader" id="SiteHeader">
+    <h1 class="siteHeader_title">Arijit Bhowmick</h1>
+    <p class="siteHeader_label">Security Researcher</p>
+    <nav class="siteHeader_nav" x-data>
+        <ol>
+        <li :class="{ 'is-selected': $store.app.currentPath === '/' }">
+            <div class="_dot">&#x25cf;</div>
+            <a class="_text" href="/">Home</a>
+        </li>
+        <li :class="{ 'is-selected': $store.app.currentPath === '/projects/' }">
+            <div class="_dot">&#x25cf; Projects</div>
+            <a class="_text" href="/projects/?entryview=0">Projects</a>
+        </li>
+        <li :class="{ 'is-selected': $store.app.currentPath === '/info/' }">
+            <div class="_dot">&#x25cf; Info</div>
+            <a class="_text" href="/info/?entryview=0">Info</a>
+        </li>
+        <li :class="{ 'is-selected': $store.app.currentPath === '/contact/' }">
+            <div class="_dot">&#x25cf; Contact</div>
+            <a class="_text" href="/contact/?entryview=0">Contact</a>
+        </li>
+        <li :class="{ 'is-selected': $store.app.currentPath === '/donate/' }">
+            <div class="_dot">&#x25cf; Donate</div>
+            <a class="_text" href="/donate/?entryview=0">Donate</a>
+        </li>
+        </ol>
+    </nav>
+</header>
+
+
+            <main class="content" id="Content" data-scroll="area">
+                <div class="content_inner" data-scroll="target">
+                    
+
+
+<!-- <img class="donate_qr_img" src="/static/img/qr/101-Bytes-discord-qr-code.png" alt="">
+          <img class="donate_qr_img" src="/static/img/qr/101-Bytes-discord-qr-code.png" alt=""> -->
+
+<section class="page" data-page="donate">
+  <div class="page_content donate">
+    <div class="donate_item donate_item-1CA">
+      <div class="donate_content">
+        <ul>
+          
+          
+            <li>
+              
+                <i class="fa fa-rupee"></i>
+              
+              <a class="text-btn donate-item-link" id="donate-fund-1-link" href="#" target="_blank" rel="noopener">UPI ↗</a>
+            </li>
+          
+          
+            <li>
+              
+                <i class="fa fa-paypal"></i>
+              
+              <a class="text-btn donate-item-link" id="donate-fund-2-link" href="https://www.paypal.me/sys41x4" target="_blank" rel="noopener">PayPal ↗</a>
+            </li>
+          
+          
+            <li>
+              
+                <img class="img-icon grayscale-100" src="/static/img/icon/PATREON_SYMBOL_1_WHITE_RGB.png" alt="">
+              
+              <a class="text-btn donate-item-link" id="donate-fund-3-link" href="https://www.patreon.com/sys41x4" target="_blank" rel="noopener">Patreon ↗</a>
+            </li>
+          
+          
+            <li>
+              
+                <img class="img-icon grayscale-100" src="/static/img/icon/bmc-icon.png" alt="">
+              
+              <a class="text-btn donate-item-link" id="donate-fund-4-link" href="https://www.buymeacoffee.com/sys41x4" target="_blank" rel="noopener">BuyMeCoffee ↗</a>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+    <div class="donate_item donate_item-1CB">
+      <div class="donate_content">
+        <ul>
+          
+          
+            <li>
+              
+                <img class="img-icon grayscale-100" src="/static/img/icon/solana-sol-logo.png" alt="">
+              
+              <a class="text-btn donate-item-link" id="donate-cryptocurrency-1-link" href="https://explorer.solana.com/address/2JzWTWFWMnF4f7bcoCoawUZDJZk5mH6D4Y6ADbGEvqqz" target="_blank" rel="noopener">Solana ↗</a>
+            </li>
+          
+          
+            <li>
+              
+                <img class="img-icon grayscale-100" src="/static/img/icon/monero-xmr-logo.png" alt="">
+              
+              <a class="text-btn donate-item-link" id="donate-cryptocurrency-2-link" href="#" target="_blank" rel="noopener">Monero ↗</a>
+            </li>
+          
+          
+            <li>
+              
+                <img class="img-icon grayscale-100" src="/static/img/icon/bitcoin-btc-logo.png" alt="">
+              
+              <a class="text-btn donate-item-link" id="donate-cryptocurrency-3-link" href="https://www.blockchain.com/explorer/addresses/btc/bc1qpn5pzm3pllyc69shwyh4e37tn84wepmj4zankw" target="_blank" rel="noopener">SEGWITBTC ↗</a>
+            </li>
+          
+          
+            <li>
+              
+                <img class="img-icon grayscale-100" src="/static/img/icon/optimism-ethereum-op-logo.png" alt="">
+              
+              <a class="text-btn donate-item-link" id="donate-cryptocurrency-4-link" href="https://optimistic.etherscan.io/address/0xe703dc3941a174a64afcb088f3142483908004e5" target="_blank" rel="noopener">OPTIMISM ↗</a>
+            </li>
+          
+          
+            <li>
+              
+                <img class="img-icon grayscale-100" src="/static/img/icon/bitcoin-cash-bch-logo.png" alt="">
+              
+              <a class="text-btn donate-item-link" id="donate-cryptocurrency-5-link" href="https://www.blockchain.com/explorer/addresses/bch/1NkPxe4iB5yTYbvPtnU3vSJRe1DQznWaw9" target="_blank" rel="noopener">Bitcoin Cash ↗</a>
+            </li>
+          
+          
+            <li>
+              
+                <img class="img-icon grayscale-100" src="/static/img/icon/tron-trx-logo.png" alt="">
+              
+              <a class="text-btn donate-item-link" id="donate-cryptocurrency-6-link" href="https://tronscan.org/#/address/TBENzQr4bLH9rTuuQhotmGRefyzZTMVoDF" target="_blank" rel="noopener">TRX Tron ↗</a>
+            </li>
+          
+          
+            <li>
+              
+                <img class="img-icon grayscale-100" src="/static/img/icon/litecoin-ltc-logo.png" alt="">
+              
+              <a class="text-btn donate-item-link" id="donate-cryptocurrency-7-link" href="https://blockchair.com/litecoin/address/LQEG9j4D6TMrraUfFL3rApz8tFXqt8eRTW" target="_blank" rel="noopener">Litecoin ↗</a>
+            </li>
+          
+          
+            <li>
+              
+                <img class="img-icon grayscale-100" src="/static/img/icon/dogecoin-doge-logo.png" alt="">
+              
+              <a class="text-btn donate-item-link" id="donate-cryptocurrency-8-link" href="https://dogechain.info/address/D9aAqJmatDACCXSBfur1WSRS8zZN4hqQ66" target="_blank" rel="noopener">Dogecoin ↗</a>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+    <div class="donate_item donate_item-1-description-box">
+      <div class="donate_content">
+        <ul>
+          
+          
+          
+          
+            
+            
+            <li>
+              <div class="donate-item-description link-float-div-small donate-fund-1-description">
+                <div class="donate-item-description-heading">
+                  <h1>Donate fund | UPI</h1>
+                </div>
+                
+                <div class="donate-item-description-content">
+                  <div class="qr-bg-white">
+                    
+                      
+                        
+                          <div class="donate-item-description-qr-img">
+                            <img class="hw-100-percent" src="/static/img/qr/qr_UPI_sys41x4.png" alt="QR Code">
+                          </div>
+                        
+                      
+                    
+                  </div>
+                  <div class="donate-item-description-details-block">
+                    <p>
+                      Address: sys41x4@upi<br>
+                      Supported Types : INR<br>
+                      You can donate through UPI
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            
+            
+            
+            <li>
+              <div class="donate-item-description link-float-div-small donate-fund-2-description">
+                <div class="donate-item-description-heading">
+                  <h1>Donate fund | PayPal</h1>
+                </div>
+                
+                <div class="donate-item-description-content">
+                  <div class="qr-bg-white">
+                    
+                      
+                        
+                          <div class="donate-item-description-qr-img">
+                            <img class="hw-100-percent" src="/static/img/qr/qr_sys41x4_paypal.png" alt="QR Code">
+                          </div>
+                        
+                      
+                    
+                  </div>
+                  <div class="donate-item-description-details-block">
+                    <p>
+                      Address: https://www.paypal.me/sys41x4<br>
+                      Supported Types : INR USD EUR<br>
+                      You can make a donation in $ USD or in € Euro
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            
+            
+            
+            <li>
+              <div class="donate-item-description link-float-div-small donate-fund-3-description">
+                <div class="donate-item-description-heading">
+                  <h1>Donate fund | Patreon</h1>
+                </div>
+                
+                <div class="donate-item-description-content">
+                  <div class="qr-bg-white">
+                    
+                      
+                        
+                          <div class="donate-item-description-qr-img">
+                            <img class="hw-100-percent" src="/static/img/qr/qr_sys41x4_patreon.png" alt="QR Code">
+                          </div>
+                        
+                      
+                    
+                  </div>
+                  <div class="donate-item-description-details-block">
+                    <p>
+                      Address: https://www.patreon.com/sys41x4<br>
+                      Supported Types : INR USD EUR<br>
+                      You can make a donation in $ USD or in € Euro
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            
+            
+            
+            <li>
+              <div class="donate-item-description link-float-div-small donate-fund-4-description">
+                <div class="donate-item-description-heading">
+                  <h1>Donate fund | BuyMeCoffee</h1>
+                </div>
+                
+                <div class="donate-item-description-content">
+                  <div class="qr-bg-white">
+                    
+                      
+                        
+                          <div class="donate-item-description-qr-img">
+                            <img class="hw-100-percent" src="/static/img/qr/qr_sys41x4_buymeacoffee.png" alt="QR Code">
+                          </div>
+                        
+                      
+                    
+                  </div>
+                  <div class="donate-item-description-details-block">
+                    <p>
+                      Address: https://www.buymeacoffee.com/sys41x4<br>
+                      Supported Types : USD EUR<br>
+                      You can make a donation in $ USD or in € Euro
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            
+            
+          
+            
+            
+            <li>
+              <div class="donate-item-description link-float-div-small donate-cryptocurrency-1-description">
+                <div class="donate-item-description-heading">
+                  <h1>Donate cryptocurrency | Solana</h1>
+                </div>
+                
+                <div class="donate-item-description-content">
+                  <div class="qr-bg-white">
+                    
+                      
+                        
+                          <div class="donate-item-description-qr-img" id="qr-img-donate-cryptocurrency-1" data="2JzWTWFWMnF4f7bcoCoawUZDJZk5mH6D4Y6ADbGEvqqz" dimension="3vhHx3vhW" colors="#ffffffLx#000000D"></div>
+                        
+                      
+                    
+                  </div>
+                  <div class="donate-item-description-details-block">
+                    <p>
+                      Address: 2JzWTWFWMnF4f7bcoCoawUZDJZk5mH6D4Y6ADbGEvqqz<br>
+                      Supported Types : SOL USDT<br>
+                      Donate using solana
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            
+            
+            
+            <li>
+              <div class="donate-item-description link-float-div-small donate-cryptocurrency-2-description">
+                <div class="donate-item-description-heading">
+                  <h1>Donate cryptocurrency | Monero</h1>
+                </div>
+                
+                <div class="donate-item-description-content">
+                  <div class="qr-bg-white">
+                    
+                      
+                        
+                          <div class="donate-item-description-qr-img" id="qr-img-donate-cryptocurrency-2" data="8BdwN37WKnzbduYHJqF9S5By5a4KtUZ8sYuz8yFVei34jPcjHY1jeTbAgzy4TYrJAX7C89Vqgd2qfhngZCP6NeQ5Ufbp2wW" dimension="3vhHx3vhW" colors="#ffffffLx#000000D"></div>
+                        
+                      
+                    
+                  </div>
+                  <div class="donate-item-description-details-block">
+                    <p>
+                      Address: 8BdwN37WKnzbduYHJqF9S5By5a4KtUZ8sYuz8yFVei34jPcjHY1jeTbAgzy4TYrJAX7C89Vqgd2qfhngZCP6NeQ5Ufbp2wW<br>
+                      Supported Types : XMR<br>
+                      Donate using monero
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            
+            
+            
+            <li>
+              <div class="donate-item-description link-float-div-small donate-cryptocurrency-3-description">
+                <div class="donate-item-description-heading">
+                  <h1>Donate cryptocurrency | SEGWITBTC</h1>
+                </div>
+                
+                <div class="donate-item-description-content">
+                  <div class="qr-bg-white">
+                    
+                      
+                        
+                          <div class="donate-item-description-qr-img" id="qr-img-donate-cryptocurrency-3" data="bc1qpn5pzm3pllyc69shwyh4e37tn84wepmj4zankw" dimension="3vhHx3vhW" colors="#ffffffLx#000000D"></div>
+                        
+                      
+                    
+                  </div>
+                  <div class="donate-item-description-details-block">
+                    <p>
+                      Address: bc1qpn5pzm3pllyc69shwyh4e37tn84wepmj4zankw<br>
+                      Supported Types : BTC<br>
+                      Donate using solana
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            
+            
+            
+            <li>
+              <div class="donate-item-description link-float-div-small donate-cryptocurrency-4-description">
+                <div class="donate-item-description-heading">
+                  <h1>Donate cryptocurrency | OPTIMISM</h1>
+                </div>
+                
+                <div class="donate-item-description-content">
+                  <div class="qr-bg-white">
+                    
+                      
+                        
+                          <div class="donate-item-description-qr-img" id="qr-img-donate-cryptocurrency-4" data="0xe703dc3941a174a64afcb088f3142483908004e5" dimension="3vhHx3vhW" colors="#ffffffLx#000000D"></div>
+                        
+                      
+                    
+                  </div>
+                  <div class="donate-item-description-details-block">
+                    <p>
+                      Address: 0xe703dc3941a174a64afcb088f3142483908004e5<br>
+                      Supported Types : ETH BUSD<br>
+                      Donate using ETH/BUSD
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            
+            
+            
+            <li>
+              <div class="donate-item-description link-float-div-small donate-cryptocurrency-5-description">
+                <div class="donate-item-description-heading">
+                  <h1>Donate cryptocurrency | Bitcoin Cash</h1>
+                </div>
+                
+                <div class="donate-item-description-content">
+                  <div class="qr-bg-white">
+                    
+                      
+                        
+                          <div class="donate-item-description-qr-img" id="qr-img-donate-cryptocurrency-5" data="1NkPxe4iB5yTYbvPtnU3vSJRe1DQznWaw9" dimension="3vhHx3vhW" colors="#ffffffLx#000000D"></div>
+                        
+                      
+                    
+                  </div>
+                  <div class="donate-item-description-details-block">
+                    <p>
+                      Address: 1NkPxe4iB5yTYbvPtnU3vSJRe1DQznWaw9<br>
+                      Supported Types : BCH<br>
+                      Donate using BCH
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            
+            
+            
+            <li>
+              <div class="donate-item-description link-float-div-small donate-cryptocurrency-6-description">
+                <div class="donate-item-description-heading">
+                  <h1>Donate cryptocurrency | TRX Tron</h1>
+                </div>
+                
+                <div class="donate-item-description-content">
+                  <div class="qr-bg-white">
+                    
+                      
+                        
+                          <div class="donate-item-description-qr-img" id="qr-img-donate-cryptocurrency-6" data="TBENzQr4bLH9rTuuQhotmGRefyzZTMVoDF" dimension="3vhHx3vhW" colors="#ffffffLx#000000D"></div>
+                        
+                      
+                    
+                  </div>
+                  <div class="donate-item-description-details-block">
+                    <p>
+                      Address: TBENzQr4bLH9rTuuQhotmGRefyzZTMVoDF<br>
+                      Supported Types : TRX BTTC<br>
+                      Donate using TRX/BTTC
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            
+            
+            
+            <li>
+              <div class="donate-item-description link-float-div-small donate-cryptocurrency-7-description">
+                <div class="donate-item-description-heading">
+                  <h1>Donate cryptocurrency | Litecoin</h1>
+                </div>
+                
+                <div class="donate-item-description-content">
+                  <div class="qr-bg-white">
+                    
+                      
+                        
+                          <div class="donate-item-description-qr-img" id="qr-img-donate-cryptocurrency-7" data="LQEG9j4D6TMrraUfFL3rApz8tFXqt8eRTW" dimension="3vhHx3vhW" colors="#ffffffLx#000000D"></div>
+                        
+                      
+                    
+                  </div>
+                  <div class="donate-item-description-details-block">
+                    <p>
+                      Address: LQEG9j4D6TMrraUfFL3rApz8tFXqt8eRTW<br>
+                      Supported Types : LTC<br>
+                      Donate using LTC
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            
+            
+            
+            <li>
+              <div class="donate-item-description link-float-div-small donate-cryptocurrency-8-description">
+                <div class="donate-item-description-heading">
+                  <h1>Donate cryptocurrency | Dogecoin</h1>
+                </div>
+                
+                <div class="donate-item-description-content">
+                  <div class="qr-bg-white">
+                    
+                      
+                        
+                          <div class="donate-item-description-qr-img" id="qr-img-donate-cryptocurrency-8" data="D9aAqJmatDACCXSBfur1WSRS8zZN4hqQ66" dimension="3vhHx3vhW" colors="#ffffffLx#000000D"></div>
+                        
+                      
+                    
+                  </div>
+                  <div class="donate-item-description-details-block">
+                    <p>
+                      Address: D9aAqJmatDACCXSBfur1WSRS8zZN4hqQ66<br>
+                      Supported Types : DOGE<br>
+                      Donate using DOGE
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            
+            
+          
+        </ul>
+      </div>
+    </div>
+    <div class="donate_item donate_item-2">
+      <div class="donate_content">
+        <ul>
+          
+            <li>
+              <a class="text-btn" href="#" target="_blank" rel="noopener">UPI ↗</a>
+            </li>
+          
+            <li>
+              <a class="text-btn" href="https://www.paypal.me/sys41x4" target="_blank" rel="noopener">PayPal ↗</a>
+            </li>
+          
+            <li>
+              <a class="text-btn" href="https://www.patreon.com/sys41x4" target="_blank" rel="noopener">Patreon ↗</a>
+            </li>
+          
+            <li>
+              <a class="text-btn" href="https://www.buymeacoffee.com/sys41x4" target="_blank" rel="noopener">BuyMeCoffee ↗</a>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+    <div class="donate_item donate_item-3">
+      <div class="donate_content">
+        
+      </div>
+    </div>
+  </div>
+</section>
+  
+                </div>
+            </main>
+        </div>  
+        <!-- <footer>
+            <p>Created by <a href="https://sys41x4.github.io/">Arijit Bhowmick</a> (2023)</p>
+        </footer> -->
+        <script src="/static/js/main8d95.js?v=2023091701"></script>
+        <script src="/static/js/qr-controls.js"></script>
+    </body>
+</html>

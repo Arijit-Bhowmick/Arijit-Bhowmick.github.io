@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Arijit Bhowmick</title>
+        <meta name="description" content="Security Researcher from India">
+        <link rel="canonical" href="index.html">
+        <meta property="og:locale" content="en_IN">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Arijit Bhowmick">
+        <meta property="og:title" content="Arijit Bhowmick">
+        <meta property="og:description" content="Security Researcher from India">
+        <meta property="og:url" content="index.html">
+        <meta property="og:image" content="/static/share-image.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="google" content="nositelinkssearchbox">
+        <meta name="google" content="notranslate">
+        
+        <!-- Font Awesome css -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+        
+        <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/font-awesome.min.css'> -->
+
+        <link rel="stylesheet" href="/static/css/style8d95.css?v=2023091701">
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+        <!-- <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script> -->
+        <script src="/static/js/donate.js"></script>
+
+        <!-- Favicon -->
+        <link rel="icon" href="/static/img/favicon/favicon.ico">
+        <link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/static/img/favicon/favicon-16x16.png">
+        <link rel="apple-touch-icon" href="/static/img/favicon/favicon.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/static/img/favicon/apple-touch-icon.png">
+        
+
+
+<link rel="manifest" href="/site.webmanifest">
+        
+        
+        
+    </head>
+
+
+    <body>
+        <div id="EnterView">
+            <div class="_t1">
+                Arijit Bhowmick
+            </div>
+            <div class="_t2">
+                Portfolio
+            </div>
+        </div>
+        <div id="Page">
+            <div id="Background">
+                <canvas></canvas>
+            </div>
+            <div class="mask" id="Mask">
+                <div class="mask_top"></div>
+                <div class="mask_bottom"></div>
+            </div>
+            <div class="frame" id="Frame">
+                <div class="frame_line frame_line-left"></div>
+                <div class="frame_line frame_line-right"></div>
+                <div class="frame_line frame_line-top"></div>
+                <div class="frame_line frame_line-bottom"></div>
+            </div>
+            
+            
+    <div class="theme" id="Theme" x-data>
+    <div class="theme_colors" @click="$store.app.toggleTheme()">
+    <div class="theme_btn" :class="{ 'is-selected': $store.app.theme === 'light' }">
+        <div class="_box"></div>
+        <div class="_text">Light</div>
+    </div>
+    <div class="theme_btn" :class="{ 'is-selected': $store.app.theme === 'dark' }">
+        <div class="_box"></div>
+        <div class="_text">Dark</div>
+    </div>
+    </div>
+    <div class="theme_btn" :class="{ 'is-selected': $store.app.fontStyle === 'mono' }" @click="$store.app.toggleFontStyle()">
+    <div class="_box"></div>
+    <div class="_text">Monospaced</div>
+    </div>
+</div>
+
+
+            
+    <!-- Include header content from header.html -->
+    <header class="siteHeader" id="SiteHeader">
+    <h1 class="siteHeader_title">Arijit Bhowmick</h1>
+    <p class="siteHeader_label">Security Researcher</p>
+    <nav class="siteHeader_nav" x-data>
+        <ol>
+        <li :class="{ 'is-selected': $store.app.currentPath === '/' }">
+            <div class="_dot">&#x25cf;</div>
+            <a class="_text" href="/">Home</a>
+        </li>
+        <li :class="{ 'is-selected': $store.app.currentPath === '/projects/' }">
+            <div class="_dot">&#x25cf; Projects</div>
+            <a class="_text" href="/projects/?entryview=0">Projects</a>
+        </li>
+        <li :class="{ 'is-selected': $store.app.currentPath === '/info/' }">
+            <div class="_dot">&#x25cf; Info</div>
+            <a class="_text" href="/info/?entryview=0">Info</a>
+        </li>
+        <li :class="{ 'is-selected': $store.app.currentPath === '/contact/' }">
+            <div class="_dot">&#x25cf; Contact</div>
+            <a class="_text" href="/contact/?entryview=0">Contact</a>
+        </li>
+        <li :class="{ 'is-selected': $store.app.currentPath === '/donate/' }">
+            <div class="_dot">&#x25cf; Donate</div>
+            <a class="_text" href="/donate/?entryview=0">Donate</a>
+        </li>
+        </ol>
+    </nav>
+</header>
+
+
+            <main class="content" id="Content" data-scroll="area">
+                <div class="content_inner" data-scroll="target">
+                    
+<section class="page" data-page="projects">
+  <div class="page_content project">
+    
+      <div class="project_section">
+        <h2 class="project_heading">&#x25a0; Projects (Design &amp; Develop)</h2>
+        <div class="project_list">
+          
+            <a class="project_item text-btn" href="https://github.com/Arijit-Bhowmick/0x41-MUSIC-PLAYER" target="_blank">
+              <div class="project_title">0x41 MUSIC PLAYER</div>
+              <div class="project_info">Python based GUI Music Player</div>
+              
+              
+                <div class="project_content">
+                  <!-- Here is the lengthy content of your project in Markdown format. You can add as much detail as needed. -->
+                </div>
+              
+            </a>
+          
+            <a class="project_item text-btn" href="https://github.com/sys41x4/AUTOME-AI" target="_blank">
+              <div class="project_title">AUTOME AI</div>
+              <div class="project_info">AI Automation ChatBot Network</div>
+              
+              
+                <div class="project_content">
+                  <!-- Here is the lengthy content of your project in Markdown format. You can add as much detail as needed. -->
+                </div>
+              
+            </a>
+          
+            <a class="project_item text-btn" href="https://github.com/sys41x4/DDoS-IT-DOWN" target="_blank">
+              <div class="project_title">DDoS IT DOWN</div>
+              <div class="project_info">System and Network Testing</div>
+              
+              
+                <div class="project_content">
+                  <!-- Here is the lengthy content of your project in Markdown format. You can add as much detail as needed. -->
+                </div>
+              
+            </a>
+          
+            <a class="project_item text-btn" href="https://github.com/sys41x4" target="_blank">
+              <div class="project_title">DECENTRALIZED INTERNET RELAY CHAT SYSTEM</div>
+              <div class="project_info">web3 | IPFS</div>
+              
+              
+                <div class="project_content">
+                  <!-- Here is the lengthy content of your project in Markdown format. You can add as much detail as needed. -->
+                </div>
+              
+            </a>
+          
+            <a class="project_item text-btn" href="https://github.com/sys41x4/DoS-IT-DOWN" target="_blank">
+              <div class="project_title">DoS IT DOWN</div>
+              <div class="project_info">System and Network Testing</div>
+              
+              
+                <div class="project_content">
+                  <!-- Here is the lengthy content of your project in Markdown format. You can add as much detail as needed. -->
+                </div>
+              
+            </a>
+          
+            <a class="project_item text-btn" href="https://github.com/Arijit-Bhowmick/Give-My-Seat" target="_blank">
+              <div class="project_title">GIVE MY SEAT</div>
+              <div class="project_info">Seat Booking System</div>
+              
+              
+                <div class="project_content">
+                  <!-- Here is the lengthy content of your project in Markdown format. You can add as much detail as needed. -->
+                </div>
+              
+            </a>
+          
+            <a class="project_item text-btn" href="https://github.com/sys41x4/halkaDM" target="_blank">
+              <div class="project_title">HALKA DM</div>
+              <div class="project_info">Desktop Manager [TUI/GUI]</div>
+              
+              
+                <div class="project_content">
+                  <!-- Here is the lengthy content of your project in Markdown format. You can add as much detail as needed. -->
+                </div>
+              
+            </a>
+          
+            <a class="project_item text-btn" href="https://github.com/Arijit-Bhowmick/HOME-AI" target="_blank">
+              <div class="project_title">HOME-AI</div>
+              <div class="project_info">College 1st Sem Physics Project</div>
+              
+              
+                <div class="project_content">
+                  <!-- Here is the lengthy content of your project in Markdown format. You can add as much detail as needed. -->
+                </div>
+              
+            </a>
+          
+            <a class="project_item text-btn" href="https://github.com/Arijit-Bhowmick/MP3_MusicPlayer-Internship_UNIcompiler" target="_blank">
+              <div class="project_title">MP3 MUSIC PLAYER</div>
+              <div class="project_info">Command Line Interface</div>
+              
+              
+                <div class="project_content">
+                  <!-- Here is the lengthy content of your project in Markdown format. You can add as much detail as needed. -->
+                </div>
+              
+            </a>
+          
+            <a class="project_item text-btn" href="https://github.com/open101watch/OPEN101_SW_NANO_LIGHT" target="_blank">
+              <div class="project_title">OPEN101 WATCH</div>
+              <div class="project_info">NANO LIGHT</div>
+              
+              
+                <div class="project_content">
+                  <!-- Here is the lengthy content of your project in Markdown format. You can add as much detail as needed. -->
+                </div>
+              
+            </a>
+          
+            <a class="project_item text-btn" href="https://github.com/Arijit-Bhowmick/SEC_WHATSAPP_SPAMMER" target="_blank">
+              <div class="project_title">SEC-WHATSAPP SPAMMER</div>
+              <div class="project_info">Whatsapp Automation scripts</div>
+              
+              
+                <div class="project_content">
+                  <!-- Here is the lengthy content of your project in Markdown format. You can add as much detail as needed. -->
+                </div>
+              
+            </a>
+          
+            <a class="project_item text-btn" href="https://github.com/Arijit-Bhowmick/YouTube_Video_Downloader-Internship_UNIcompiler" target="_blank">
+              <div class="project_title">YOUTUBE VIDEO DOWNLOADER</div>
+              <div class="project_info">Command Line Interface</div>
+              
+              
+                <div class="project_content">
+                  <!-- Here is the lengthy content of your project in Markdown format. You can add as much detail as needed. -->
+                </div>
+              
+            </a>
+          
+        </div>
+      </div>
+    
+      <div class="project_section">
+        <h2 class="project_heading">&#x25a0; Projects (Only Develop)</h2>
+        <div class="project_list">
+          
+            <a class="project_item text-btn" href="https://github.com/sys41x4/kivy-buildozer-setup" target="_blank">
+              <div class="project_title">KIVY BUILDOZER SETUP</div>
+              <div class="project_info">Requirements and Dependencies to setup kivy-buildozer for py to apk conversion</div>
+              
+              
+                <div class="project_content">
+                  <!-- Here is the lengthy content of your project in Markdown format. You can add as much detail as needed. -->
+                </div>
+              
+            </a>
+          
+        </div>
+      </div>
+    
+  </div>
+</section>
+
+
+                </div>
+            </main>
+        </div>  
+        <!-- <footer>
+            <p>Created by <a href="https://sys41x4.github.io/">Arijit Bhowmick</a> (2023)</p>
+        </footer> -->
+        <script src="/static/js/main8d95.js?v=2023091701"></script>
+        <script src="/static/js/qr-controls.js"></script>
+    </body>
+</html>
